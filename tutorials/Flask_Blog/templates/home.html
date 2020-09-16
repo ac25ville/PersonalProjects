@@ -1,0 +1,12 @@
+{% extends "layout.html" %}
+{% block content %}
+<!--<h2>Post <span class="badge badge-dark">a blog</span></h2>-->
+    {%for post in posts%}
+        <article class="post border border-dark rounded shadow">
+            <h1>{{ post.title }}</h1>
+            <small>By {{post.author}} on {{post.date_posted}}</small>
+            <hr />
+            <p>{{ post.content }}</p>
+        </article>
+    {% endfor %}
+{% endblock content %}

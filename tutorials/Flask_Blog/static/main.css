@@ -1,0 +1,17 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@435&display=swap');
+
+body{
+    font-family: 'Quicksand', sans-serif;
+}
+
+.content{
+/*    margin: 0 auto;*/
+    width: 75%;
+    margin-top: 5%;
+}
+
+.post{
+    padding: 10px;
+    margin-bottom: 50px;
+}
