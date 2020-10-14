@@ -1,0 +1,22 @@
+p.edu-content{
+    display: inline-block;
+    padding: 15px;
+    margin: 15px;
+    border: thin solid grey;
+    border-radius: 5px 5px;
+    background-color: #F8F9FA;
+    transition: ease-in 0.1s;
+
+    &:hover{
+        background-color: rgba(#fffddb, 0.5);
+    }
+}
+
+tr{
+    
+    transition: ease-in 0.1s;
+
+    &:hover{
+        background-color: rgba(#fffddb, 0.5);
+    }
+}

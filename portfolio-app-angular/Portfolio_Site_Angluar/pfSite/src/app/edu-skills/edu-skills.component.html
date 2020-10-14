@@ -1,0 +1,47 @@
+<h2>Education</h2>
+<hr>
+<div class="container">
+    <p class="edu-content shadow-sm">
+        <strong>University of Missouri: </strong> 
+        <em>Bachelor of Science, Major in Computer Science</em>
+    </p>
+    
+        <p class="edu-content shadow-sm"><strong>Anticipated Graduation Date: </strong> 
+        <em>May 2022</em></p>
+    
+    
+        <p class="edu-content shadow-sm"><strong>Location: </strong> 
+        <em>Columbia, Missouri</em></p>
+</div>
+
+<br>
+<h2>Technical Skills</h2>
+<hr>
+<div class="container">
+
+    <table class="table table-bordered">
+        <thead>
+            <tr>
+                <th scope="col">#</th>
+                <th scope="col">Skill</th>
+                <th scope="col">Practice Level</th>
+            </tr>
+        </thead>
+        <tbody *ngIf="techSkills">
+            <tr *ngFor="let skill of techSkills; index as i">
+                <th scope="row">{{ i + 1 }}</th>
+
+                <td> {{ skill.name }} </td>
+                <td> {{ skill.level }} </td>
+
+            </tr>
+        </tbody>
+    </table>
+    <div class="container d-flex justify-content-center">
+        <ngb-pagination 
+        [collectionSize]="collectionSize" 
+        [(page)]="page" [pageSize]="pageSize" 
+        (pageChange)="refreshSkills()">
+        </ngb-pagination>
+    </div>
+</div>

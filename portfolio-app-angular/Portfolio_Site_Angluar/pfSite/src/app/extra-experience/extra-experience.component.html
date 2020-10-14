@@ -1,0 +1,38 @@
+<h2>Work Experience</h2>
+<hr>
+<div class="container">
+<h4>University of Missouri 
+<small class="text-muted">March 2019 - November 2019</small>
+</h4>
+<h5><em>Bicycle Mechanic</em></h5>
+    <ul *ngIf="bikeMechanic">
+        <li *ngFor="let item of bikeMechanic">{{ item }}</li>
+    </ul>
+<h4>Delmar Gardens 
+<small class="text-muted">May 2017 - Present</small>
+</h4>
+<h5><em>Shift Supervisor</em></h5>
+    <ul *ngIf="shiftSupervisor">
+        <li *ngFor="let item of shiftSupervisor">{{ item }}</li>
+    </ul>
+</div>
+
+<br>
+<h2>Extracurriculars</h2>
+<hr>
+<div class="container">
+
+<h4>Internal Vice Chief Engineer 
+<small class="text-muted">May 2020 - Present</small>
+</h4>
+    <ul *ngIf="internalVP">
+        <li *ngFor="let item of internalVP">{{ item }}</li>
+    </ul>
+<h4>External Vice Chief Engineer 
+<small class="text-muted">December 2019 - May 2020</small>
+</h4>
+    <ul *ngIf="externalVP">
+        <li *ngFor="let item of externalVP">{{ item }}</li>
+    </ul>
+
+</div>

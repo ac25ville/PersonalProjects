@@ -1,0 +1,24 @@
+nav{
+    background-color: #7aacdc;
+    padding: 0px;
+    padding-right: 5px;
+    position: sticky;
+    // position: -webkit-sticky;
+    top: 0;
+    border-bottom: thick ridge #daebfb;
+}
+
+.navbar-nav{
+    padding: 0px;
+}
+
+.navbar a{
+    padding: 15px;
+    transition: ease-in 0.1s;
+    &.navbar-collapse a{
+        text-indent: 10px;
+    }
+    &:hover{
+        background-color: rgba(#daebfb, 0.4);
+    }
+}

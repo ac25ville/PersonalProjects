@@ -1,0 +1,17 @@
+/* You can add global styles to this file, and also import other style files */
+@import url('https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@300;400;700&display=swap');
+/* Importing Bootstrap SCSS file. */
+@import '~bootstrap/scss/bootstrap';
+
+body{
+    font-family: 'Kumbh Sans', sans-serif;
+    // background-color: #f8f9fa;
+    background-image: linear-gradient(#f8f9fa,#daebfb);
+    background-size: cover;
+    min-height: 100vh;
+}
+
+.content{
+    margin-top: 75px;
+    padding: 15px;
+}
